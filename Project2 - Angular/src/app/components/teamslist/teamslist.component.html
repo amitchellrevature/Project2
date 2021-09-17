@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+
+
+<div class="container">
+    <h1 class="text-center" style="font-size: 48px;">Team Stats</h1>
+        <button (click)="onHome()"  class="btn btn-outline-secondary">Home</button>
+    <div class="card">
+        
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead class="thead" style="background: lightblue;">
+                    <tr>
+                        <th>Team Id</th>
+                        <th>Team Color</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let team of teams">
+                        <td>{{ team.teamId }}</td>
+                        <td>{{ team.teamColor }}</td>
+                        <td>{{ team.wins }}</td>
+                        <td>{{ team.losses }}</td>        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
