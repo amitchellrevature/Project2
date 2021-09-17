@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class TeamsImpl implements  TeamsService{
+public class TeamsImpl implements  TeamsService {
 
     @Autowired
     private TeamsRepository repository;
@@ -30,6 +30,6 @@ public class TeamsImpl implements  TeamsService{
 
     @Override
     public List<Teams> getAllTeams() {
-        return null;
+        return repository.findAll();
     }
 }

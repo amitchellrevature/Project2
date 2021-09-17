@@ -18,9 +18,9 @@ import javax.persistence.*;
 
 
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Builder
 public class Teams {
 
