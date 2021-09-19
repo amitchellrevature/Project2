@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 public class User {
-    @Id @GeneratedValue (strategy = GenerationType.SEQUENCE, generator="USER_SEQ") private Long id;
+    @Id @GeneratedValue (strategy = GenerationType.AUTO, generator="USER_SEQ") private Long id;
     private String username;
     private String password;
     @ManyToOne private Team team;

@@ -28,9 +28,6 @@ public class BoardController {
     @GetMapping("/board")
     public Board getNewBoard(@RequestBody Team team) { return service.getNewBoard(team); }
 
-    @GetMapping("/board")
-    public List<Board> getAllBoards() { return service.getAllBoards(); }
-
     @GetMapping("/board/{player1}")
     public List<Board> getBoardsByColor(@PathVariable("player1") long player1) { return service.getBoardsByColor(player1);}
 

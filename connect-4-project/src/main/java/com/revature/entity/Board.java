@@ -12,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Board {
-    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="BOARD_SEQ") private Long id;
+    @Id @GeneratedValue(strategy = GenerationType.AUTO, generator="BOARD_SEQ") private Long id;
     private String configuration;
     @ManyToOne private Team team1;
     @ManyToOne private Team team2;

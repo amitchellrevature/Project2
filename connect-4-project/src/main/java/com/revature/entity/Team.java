@@ -13,9 +13,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 public class Team {
-    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="TEAM_SEQ") private Long id;
+    @Id @GeneratedValue(strategy = GenerationType.AUTO, generator="TEAM_SEQ") private Long id;
     private String color;
-    private char character;
+    private char characters;
     private Long wins;
     private Long losses;
 
@@ -27,12 +27,12 @@ public class Team {
         this.id = id;
     }
 
-    public char getCharacter() {
-        return this.character;
+    public char getCharacters() {
+        return this.characters;
     }
 
-    public void setCharacter(char character) {
-        this.character = character;
+    public void setCharacters(char characters) {
+        this.characters = characters;
     }
 
     public String getColor() {

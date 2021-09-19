@@ -87,7 +87,7 @@ public class BoardImpl implements  BoardService {
     @Override
     public Board updateBoard(long id, int slot) {
         Board board = repository.getById(id);
-        board.setConfiguration(Connect4Logic.place(board.getConfiguration(), slot, board.getTeam1().getCharacter()));
+        board.setConfiguration(Connect4Logic.place(board.getConfiguration(), slot, board.getTeam1().getCharacters()));
         if (Connect4Logic.winCheck(board.getConfiguration(), slot)){
             BoardArchive boardArchive = new BoardArchive();
             boardArchive.setConfiguration(board.getConfiguration());

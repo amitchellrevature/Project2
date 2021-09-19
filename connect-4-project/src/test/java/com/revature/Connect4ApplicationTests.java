@@ -21,6 +21,7 @@ class Connect4ApplicationTests {
     public void saveRed() {
         Team team = Team.builder()
                 .color("red")
+                .characters('R')
                 .wins(0L)
                 .losses(0L)
                 .build();
@@ -31,6 +32,7 @@ class Connect4ApplicationTests {
     public void saveYellow() {
         Team team = Team.builder()
                 .color("yellow")
+                .characters('Y')
                 .wins(0L)
                 .losses(0L)
                 .build();
