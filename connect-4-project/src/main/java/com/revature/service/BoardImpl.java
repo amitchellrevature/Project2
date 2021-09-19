@@ -39,6 +39,7 @@ public class BoardImpl implements  BoardService {
     @Override
     public Board getNewBoard(Team team){
         List<Board> boards = repository.findAll();
+        boards.removeIf(board -> board.getTeam1() != team);
         Random rand = new Random();
         int index = rand.nextInt(100);
         if (index < boards.size()){
