@@ -2,6 +2,7 @@ package com.revature.controller;
 
 import com.revature.entity.Board;
 import com.revature.service.BoardService;
+import com.revature.entity.Team;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,10 +25,8 @@ public class BoardController {
         return service.getBoardById(id);
     }
 
-    @PostMapping("/board")
-
     @GetMapping("/board")
-    public List<Board> getAllBoards() { return service.getAllBoards(); }
+    public Board getNewBoard(@RequestBody Team team) { return service.getNewBoard(team); }
 
     @GetMapping("/board/{player1}")
     public List<Board> getBoardsByColor(@PathVariable("player1") long player1) { return service.getBoardsByColor(player1);}
