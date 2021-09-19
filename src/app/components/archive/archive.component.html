@@ -12,19 +12,17 @@
                 <thead class="thead" style="background: #8d8d8d;">
                     <tr style = "font-family:'Mina', sans-serif; color: #501f3a">
                         <th>Board Id</th>
-                        <th>Winner</th>
-                        <th>Loser</th>
-                        <th>Turn Counter</th>
+                        <th>Team 1</th>
+                        <th>Team 2</th>
                         <th>Board Configuration</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let archive of archives" style = "font-family:'Mina', sans-serif; color: #501f3a">
                         <td>{{ archive.id }}</td>
-                        <td>{{ archive.winner }}</td>
-                        <td>{{ archive.loser }}</td>
-                        <td>{{ archive.turnCount }}</td>        
-                        <td>{{ archive.boardConfig }}</td>
+                        <td>{{ archive.team1 }}</td>
+                        <td>{{ archive.team2 }}</td>      
+                        <td>{{ archive.configuration }}</td>
                     </tr>
                 </tbody>
             </table>

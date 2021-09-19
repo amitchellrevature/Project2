@@ -8,7 +8,7 @@ import { IArchive } from '../models/archive.model';
     providedIn: 'root',
 })
 export class ArchiveService{
-    private BASEURL = "http://localhost:9090/api/archive";
+    private BASEURL = "http://localhost:9090/archive";
  
 
     constructor(private http: HttpClient){}

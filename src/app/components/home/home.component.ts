@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GameboardService } from 'src/app/services/gameboard.service';
+import { IBoard } from 'src/app/models/gameboard.model';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  boards: IBoard[]=[];
+
+  constructor(private gameboardService: GameboardService, private router: Router) {  }
 
   ngOnInit(): void {
   }
 
+  onGetBoard(){
+    this.router.navigate(['/gameboard']);
+    this.gameboardService.getNewBoard().subscribe((data: IBoard[]) => {
+      console.log(data);
+      this.boards = data;
+    })
+  }
 }

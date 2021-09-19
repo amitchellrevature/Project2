@@ -8,7 +8,7 @@ import { ITeam } from '../models/teams.model';
     providedIn: 'root',
 })
 export class TeamsService{
-    private BASEURL = "http://localhost:9090/api/teams";
+    private BASEURL = "http://localhost:9090/team";
  
 
     constructor(private http: HttpClient){}

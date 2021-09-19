@@ -1,7 +1,6 @@
 export interface IArchive {
     id:number;
-    winner: number;
-    loser: number;
-    turnCount: number;
-    boardConfig: string;
+    team1: number;
+    team2: number;
+    configuration: string;
 }

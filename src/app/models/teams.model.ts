@@ -1,6 +1,7 @@
 export interface ITeam {
-    teamId:number;
-    teamColor: string;
+    id:number;
+    color: string;
+    characters: string;
     wins: number;
     losses: number;
 }
