@@ -1,0 +1,35 @@
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 600px;
+    height: 520px;
+    top: 9rem;
+    background: #992354;
+    border: 2px solid black; 
+    padding: .5rem;
+    box-shadow: 10px 19px #99235449;
+}
+
+.container table tr td{
+    width: 90px;
+    height: 80px;
+    border: 2px solid #501f3a;
+    border-radius: 50%;
+    background: #b1b1b1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+        width: 90%;
+        height: 520px;
+        top: 9rem;
+        border: 2px solid black;
+        padding: .5rem;
+
+    }
+}
