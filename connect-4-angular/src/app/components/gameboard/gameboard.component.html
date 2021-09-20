@@ -1,0 +1,76 @@
+<app-navbar></app-navbar>
+
+<link rel="stylesheet" href="gameboard.component.css">
+<h1 style="text-align: center;">Your color is {{boards.team1.color}}</h1>
+<div class="container">
+    <form>
+        <button (click)="setSlot(1)"></button>
+        <button (click)="setSlot(2)"></button>
+        <button (click)="setSlot(3)"></button>
+        <button (click)="setSlot(4)"></button>
+        <button (click)="setSlot(5)"></button>
+        <button (click)="setSlot(6)"></button>
+        <button (click)="setSlot(7)"></button>
+    </form>
+
+    <table>
+        <tr>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(10))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(11))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(12))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(13))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(14))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(15))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(16))"></td>
+        </tr>
+        <tr>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(19))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(20))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(21))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(22))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(23))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(24))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(25))"></td>
+        </tr>
+        <tr>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(28))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(29))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(30))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(31))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(32))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(33))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(34))"></td>
+        </tr>
+        <tr>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(37))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(38))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(39))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(40))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(41))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(42))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(43))"></td>
+        </tr>
+        <tr>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(46))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(47))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(48))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(49))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(50))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(51))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(52))"></td>
+        </tr>
+        <tr>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(55))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(56))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(57))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(58))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(59))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(60))"></td>
+            <td [style.background-color]="colorMapping(boards.configuration.charAt(61))"></td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <button type="button" (click)="onTurn(slot)" class="btn btn-secondary" style="margin-left: 240px; width: auto; font-size: 24px; font-family:'Mina', sans-serif; color: #501f3a">Submit</button>
+</div>

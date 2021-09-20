@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #afafaf;">
+   <b><a class="navbar-brand" href="#" style="font-size: 30px; font-family:'Mina', sans-serif; color: #992354">Connect 4</a></b>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+         <b><a class="nav-link" routerLink="/teamstats" style="font-size: 22px; font-family:'Mina', sans-serif; color: #501f3a">Team Stats</a></b>
+        </li>
+        <li class="nav-item">
+          <b><a class="nav-link" routerLink="/boardarchive" style="font-size: 22px; font-family:'Mina', sans-serif; color: #501f3a">Board Archive</a></b>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <button (click)="onLogin()" class="btn btn-dark my-2 my-sm-0" style="font-family:'Mina', sans-serif;">Login</button>
+          <!-- <button class="btn btn-outline-dark my-2 my-sm-0"></button> -->
+        
+      </form>
+    </div>
+  </nav>

@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+
+<body style="background-color: #0F292F;">
+<div class="container">
+    <h1 class="text-center" style="font-size:  48px; font-family:'Mina', sans-serif; color: #CCCCCC">Team Stats</h1>
+        <button (click)="onHome()"  class="btn btn-outline-secondary">Home</button>
+    <div class="card" style="background-color: #0F292F;">
+        
+        <div class="card-body"  >
+            <table class="table table-striped" style="background-color: #CCCCCC">
+                <thead class="thead" style="background: #8d8d8d;">
+                    <tr style = "font-family:'Mina', sans-serif; color: #501f3a">
+                        <th>Team Id</th>
+                        <th>Team Color</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let team of teams" style = "font-family:'Mina', sans-serif; color: #501f3a">
+                        <td>{{ team.id }}</td>
+                        <td>{{ team.color }}</td>
+                        <td>{{ team.wins }}</td>
+                        <td>{{ team.losses }}</td>        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>

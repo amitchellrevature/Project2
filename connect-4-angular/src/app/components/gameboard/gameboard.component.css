@@ -1,0 +1,50 @@
+.form-check-input{
+    width: 55px;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 600px;
+    height: 550px;
+    top: 9rem;
+    background: #992354;
+    border: 2px solid black; 
+    padding: .5rem;
+    box-shadow: 10px 10px #99235449;
+}
+
+.container table tr td{
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgb(104, 0, 61);
+    background: #b1b1b1;
+}
+
+form{
+    margin-left: -3px
+}
+button {
+    height: 40px;
+    width: 77px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+button:focus {
+    background-color:#b1b1b1
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+        width: 90%;
+        height: 520px;
+        top: 9rem;
+        border: 2px solid black;
+        padding: .5rem;
+
+    }
+}
